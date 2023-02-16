@@ -1,5 +1,5 @@
 # Alumni-Database
-project for CIT382
+Database schema for an alumni website. Model schema, sql examples and relationship tables are included
 
 • Developed Enhanced Entity-Relationship diagram for a mock Alumni website that integrates referential integrity
 to show relationships between tables, improving flexibility and ease of use.
