@@ -1,0 +1,35 @@
+Alumni Entity Relationship Rules:
+
+Table1:
+
+Event
+
+Relationship rules:
+
+A single events page can be assigned to Alumni_Home_Page table cadinality: 0,1
+Alumni_Home_page may have a single Events page.cardinality: 1,0
+non-identifying relationship 
+
+Table2:
+
+Blogs
+
+Relationship rules:
+
+A single blogs page can be assigned to Alumni_Home_Page table cadinality: 0,1
+Alumni_Home_page may have a single blogs page.cardinality: 1,0
+non-identifying relationship 
+
+A single blogs page can have many blog entries. cardinality: 1,N
+many blog entries assigned to one sing blogs page. cadinality: N,1
+non-identifying relationship
+
+Table3:
+
+Blog_Entries
+
+Relationship rules
+
+many blog entries assigned to one sing blogs page. cadinality: N,1
+A single blogs page can have many blog entries. cardinality: 1,N
+identifying relationship

@@ -1,0 +1,84 @@
+a. GET
+
+i.
+
+http://127.0.0.1:8080/blog_entries
+
+ii. 
+
+{
+    "error": "",
+    "statusCode": 200,
+    "rows": [
+        {
+            "entry_id": 3,
+            "blog_id": 3,
+            "author_first_name": "Brett",
+            "author_last_name": "McDonald"
+        },
+        {
+            "entry_id": 5,
+            "blog_id": 5,
+            "author_first_name": "Craig",
+            "author_last_name": "Anderson"
+        },
+        {
+            "entry_id": 4,
+            "blog_id": 4,
+            "author_first_name": "Jessie",
+            "author_last_name": "Willmen"
+        },
+        {
+            "entry_id": 1,
+            "blog_id": 1,
+            "author_first_name": "Kyle",
+            "author_last_name": "Ruthe"
+        },
+        {
+            "entry_id": 2,
+            "blog_id": 2,
+            "author_first_name": "Tyler",
+            "author_last_name": "Wilders"
+        }
+    ]
+}
+
+iii.
+
+http://127.0.0.1:8080/blog_entries/:entry_id
+
+iv.
+
+{
+    "error": "",
+    "statusCode": 200,
+    "rows": [
+        {
+            "entry_id": 1,
+            "blog_id": 1,
+            "author_first_name": "Kyle",
+            "author_last_name": "Ruthe"
+        }
+    ]
+}
+
+b. POST
+
+i.
+
+http://127.0.0.1:8080/blog_entries/
+
+ii. 
+
+{
+    "entry": "6",
+    "blog": "6"
+}
+
+iii. 
+
+{
+    "error": "",
+    "statusCode": 201,
+    "id": 0
+}
